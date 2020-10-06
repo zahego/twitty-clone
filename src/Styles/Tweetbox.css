@@ -1,0 +1,110 @@
+.tweetBox-grid{
+    display: grid;
+    grid-template-columns: 47px 35px 35px 35px 50px auto 70px;
+    grid-template-rows: 40px 20px auto 25px 10px 40px; 
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tweetBox-grid input{
+    border: 0;
+}
+.tweetBox-grid input:focus{
+    outline: 0;
+}
+.tweetBox .avatar{
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    cursor: pointer;
+}
+.f1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+    cursor: pointer;
+}
+.f2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+    cursor: pointer;
+}
+.f3{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+    cursor: pointer;
+}
+.f4{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7; 
+    cursor: pointer;
+}
+.t1{
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 19px;
+}
+.t2{
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 12px;
+}
+.separate-line{
+    border-bottom: 1px solid var(--twitter-background);
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+.global-setting{
+    color: var(--twitter-color) !important;
+    border-radius: 20px !important;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-content: left !important;
+    padding-right:0 !important;
+    padding-left: 0 !important;
+}
+.global-setting .fontAwesome{
+    font-size: 15px !important;
+    cursor: pointer;
+}
+.global-setting span{
+    font-weight: 600 !important;
+    font-size: 10px ;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.tweetBox .fontAwesome{
+    color: var(--twitter-color);
+}
+.tweet-button{
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 600 !important;
+    text-transform: inherit !important;
+    /*inherit text transform from material UI, give nice slice color transform when clicked*/
+    border-radius: 30px !important;
+    height: 34px !important;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}

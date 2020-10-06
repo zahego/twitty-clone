@@ -1,0 +1,80 @@
+.post {
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: 50px 23% 23% 23% 23%;
+    grid-template-rows: 20px auto auto 12px;
+    width: 93%;
+    height: auto;
+    max-height: 400px;
+    border-bottom: 1px solid var(--twitter-background);
+}
+
+.post-header {
+    display: flex;
+}
+
+.post-header>h5 {
+    padding-top: 4px;
+}
+
+.post-header p {
+    color: var(--twitter-text-light);
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.post .content-img {
+    width: 100%;
+    height: 260px;
+    
+    border-radius: 10px;
+}
+
+.post-content {
+    width: 87%;
+}
+
+.post .fontAwesome {
+    width: 20px;
+    height: 20px;
+    padding-right: 7px;
+    padding-left: 3px;
+    color: var(--twitter-color);
+    cursor: pointer;
+}
+
+.post-avatar {
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.post-content {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 5px 0;
+}
+
+.content-img {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.content-img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: 20px 10px;
+}
+
+.post-header {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}

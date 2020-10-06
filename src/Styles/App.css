@@ -1,0 +1,14 @@
+body{
+    --twitter-color: rgb(209, 63, 68);
+    --twitter-background: #e6ecf0;
+    --twitter-text-light: rgb(156, 152, 152);
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
