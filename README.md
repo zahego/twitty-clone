@@ -1,10 +1,13 @@
 
 ## Twitty clone
-[https://path-finder-extreme.netlify.app/](https://path-finder-extreme.netlify.app/)  
-A visualizer of the path finding alforithms. This helps you visualize the algorithms better on how they approaches the end points from the start, given obstacles and dead-ends.
+[https://twitter-clone-hunter.web.app/](https://twitter-clone-hunter.web.app/)  
+A Twitter clone built with React and Firebase. The site looks visually identical to Twitter homepage and have the functionality of Twitter homepage
+
+## Site imaget
+![Image of Site](https://github.com/zahego/twitty-clone/blob/master/src/Resources/screenshot/Untitled.png)
 
 ## Motivation
-I had trouble usin the Twitter API before so I figure I would try again with Twitter API.
+I had trouble using the Twitter API before so I figure I would try again with Twitter API. I also want to test and see if I can produce a UI through just looking at the picture of a site and not its code.
 
 ## Getting Started
 These instructions will guild you through the inital setting up process and 
@@ -12,18 +15,17 @@ highlight what the apps can do for you to explore on your own.
 
 
 ## Notable feature
-- Visualizer with animation for many path finding algorithms
-- Add walls and weighted nodes as obstacles
-- Maze generator (coming soon)
-- Running 2 algorithms at once as a race(coming soon)
+- Visualy captured the current UI of the website Twitter.com with a few personal twists.
+- Pulled data from twitter API
+- Can post tweet and view posted tweet
+- Usage of Grid instead of simple flex for UI elements
 
 
-## Prequesite
+## Prerequisite
 Nodejs installed for local running purpose    
 check out Node installation instruction [here](https://nodejs.org/en/)  
-Netlify set up if you would like to continuous deploy and host your own client side app
-check out Netlify instruction [here](https://www.netlify.com/)  
-Or you use any other hostin site, including github page (the site is static anyway)
+Firebase for database and online site hosting
+check out Firebase instruction [here](https://firebase.google.com/docs)  
 
 
 ## Installing and Running
@@ -40,37 +42,35 @@ Run Node command for local testing
 $ npm run start
 ```
 
-## Deploying on Netlify
+## Deploying on Firebase
 access the client folder  
 create a prouction build of the app
 ```
 $ yarn build
 ```
-install Netlify on your local repo
+install Firebase on your local repo
 ```
-$ npm install netlify-cli -g
+$ npm install --save firebase
 ```
-login to your Netlify account
+login to your Firebase account
 ```
-$ netlify login
+$ firebase login
 ```
+initialize the project on firebase
+```
+$ firebase init
+```
+choose y, then choose the newly created database created on firebase  
 start the deploy process
 ```
-$ netlify deploy
-```
-choose the option to Create and Config a new site  
-change the site name to your preference  
-set the deploy path to   
-```
-$ ./build
+$ firebase deploy
 ```
 
 
 ## What you can do
-- add walls 
-- add weighted notes (coming soon)
-- change algorithms (coming soon)
-- run the visualizer to see the animation of the algorithms.
+- tweet a post
+- check if the post appear
+- check out the widget
 
 
 ## Technologies stack
@@ -78,6 +78,8 @@ $ ./build
 - [React](https://reactjs.org/) - framework
 - [Material-UI](https://material-ui.com/) - UI components
 - [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react) - icon
+- [React Twitter Embed](https://www.npmjs.com/package/react-twitter-embed) - show Twitter stream, single tweet and the Tweet button
+- [React flip move](https://www.npmjs.com/package/react-flip-move) -simple flip animation when tweet appear
 
 ### backend
 - [Firebase](https://console.firebase.google.com/) -a google service that handle all backend logic
@@ -92,4 +94,5 @@ Minh Tran
 This project is licensed under the MIT License
 
 ## Challenges and resolutions
-- using minheap (coming soon)
+- using grid takes some times to get used to
+- I was not very fast and take 2 days to finished the project
