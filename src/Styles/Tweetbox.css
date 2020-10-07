@@ -96,6 +96,7 @@
 }
 .tweet-button{
     background-color: var(--twitter-color) !important;
+    opacity: 0.7;
     border: none !important;
     color: white !important;
     font-weight: 600 !important;
@@ -107,4 +108,7 @@
     grid-column-end: 8;
     grid-row-start: 6;
     grid-row-end: 7;
+}
+.tweet-button:hover{
+    opacity: 1;
 }

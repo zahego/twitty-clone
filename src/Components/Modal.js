@@ -83,7 +83,7 @@ export default function ModalImg({image}) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <img src={image} className={classes.modalImage}/>
+            <img src={image} alt="big img" className={classes.modalImage}/>
           </div>
         </Fade>
       </Modal>

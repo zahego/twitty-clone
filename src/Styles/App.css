@@ -1,5 +1,6 @@
 body{
     --twitter-color: rgb(209, 63, 68);
+    --twitter-color-bold: rgb(175, 34, 39);
     --twitter-background: #e6ecf0;
     --twitter-text-light: rgb(156, 152, 152);
 }

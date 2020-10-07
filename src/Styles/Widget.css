@@ -11,10 +11,15 @@
     padding: 10px;
     border-radius:20px;
     margin-top:10px;
+    
 }
 .widget-input>input{
     border: none;
     background-color: var(--twitter-background);
+    width: 90%;
+}
+.widget-input>input:focus{
+    outline: none;
 }
 .widget-searchIcon{
     color: gray;
